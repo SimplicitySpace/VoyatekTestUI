@@ -16,14 +16,29 @@ struct FoodCardView: View {
     @State private var isFavorite = false
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 0) {
             ZStack(alignment: .topTrailing) {
-                Image(imageName)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(maxWidth: .infinity, minHeight: 137, maxHeight: 137)
-                
-                
+                AsyncImage(url: URL(string: imageName)) { phase in
+                    switch phase {
+                    case .empty:
+                        ProgressView()
+                            .frame(maxWidth: .infinity, minHeight: 137, maxHeight: 137)
+                    case .success(let image):
+                        image
+                            .resizable()
+                            .scaledToFill()
+                            .frame(maxWidth: .infinity, minHeight: 137, maxHeight: 137)
+                            .clipped()
+                    case .failure:
+                        Image("placeholder_image")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxWidth: .infinity, minHeight: 137, maxHeight: 137)
+                            .clipped()
+                    @unknown default:
+                        EmptyView()
+                    }
+                }
             }
             
             VStack(alignment: .leading, spacing: 8) {
@@ -51,10 +66,10 @@ struct FoodCardView: View {
                 Text(description)
                     .font(.satoshi(weight: .regular, size: 14))
                     .lineLimit(4)
-                        .truncationMode(.tail)
+                    .truncationMode(.tail)
                     .foregroundColor(.gray)
                     .padding(.top, 6)
-                    .fixedSize(horizontal: false, vertical: true) 
+                    .fixedSize(horizontal: false, vertical: true)
                 
                 HStack {
                     ForEach(tags, id: \.self) { tag in
@@ -63,23 +78,22 @@ struct FoodCardView: View {
                             .padding(.horizontal, 10)
                             .padding(.vertical, 5)
                             .background(Color("Ktag_bg"))
-                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                            .clipShape(RoundedRectangle(cornerRadius: 0))
                     }
                 }.padding(.top, 8)
             }
-            
             .padding(.bottom, 12)
             .padding(.horizontal, 16)
-        }
+            .background(Color.white) }
         .background(Color.white)
-        .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+        .clipShape(RoundedRectangle(cornerRadius: 0, style: .continuous))
         .overlay(
-            RoundedRectangle(cornerRadius: 0)
+            RoundedRectangle(cornerRadius:0)
                 .stroke(Color.gray.opacity(0.3), lineWidth: 1)
         )
-        
     }
 }
+
 
 #Preview {
     FoodCardView(

@@ -10,7 +10,7 @@ import SwiftUI
 
 import SwiftUI
 
-struct DishSelectionView: View {
+struct DishSelectionCardView: View {
     @State private var selectedDish: String? = "All"
     
     let dishes = ["All","Morning Feast", "Sunshine Meal", "Dawn Delicacies", "Snacks", "Dessert"]
@@ -19,7 +19,7 @@ struct DishSelectionView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 10) {
                 ForEach(dishes, id: \.self) { dish in
-                    DishType(isSelected: .constant(selectedDish == dish), dish: dish)
+                    DishTypeCardView(isSelected: .constant(selectedDish == dish), dish: dish)
                         .onTapGesture {
                             selectedDish = (selectedDish == dish) ? nil : dish
                         }
@@ -31,5 +31,5 @@ struct DishSelectionView: View {
 }
 
 #Preview {
-    DishSelectionView()
+    DishSelectionCardView()
 }

@@ -16,7 +16,7 @@ struct Home: View {
             VStack(alignment: .leading, spacing: 10) {
                 ProfileHeader()
                 SearchField()
-                DishSelectionView()
+                DishSelectionCardView()
                 
                 VStack(alignment: .leading) {
                     Text("All Foods").font(.satoshi())
@@ -51,7 +51,7 @@ struct Home: View {
                 fetchFoodItems()
             }
             .padding(.horizontal, 16)
-        }
+        }.edgesIgnoringSafeArea(.leading)
     }
     
     private func fetchFoodItems() {

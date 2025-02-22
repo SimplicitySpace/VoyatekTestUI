@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DishType: View {
+struct DishTypeCardView: View {
     @Binding var isSelected: Bool
     let dish: String
     
@@ -26,5 +26,5 @@ struct DishType: View {
 
 #Preview {
     @Previewable @State var selected = true  ;
-    return DishType(isSelected: $selected, dish: "Morning Feast")
+    return DishTypeCardView(isSelected: $selected, dish: "Morning Feast")
 }
