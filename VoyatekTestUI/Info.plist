@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSCameraUsageDescription
+NSCameraUsageDescription
+NSCameraUsageDescription
+NS</key>
+	<true/>
+	<key>NSPhotoLibraryAddUsageDescription
+NSPhotoLibraryAddUsageDescription
+NSPhotoLibraryAddUsageDescription
+NSPhotoLibraryAddUsageDescription
+NSPhotoLibraryAddUsageDescription</key>
+	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>Satoshi-Regular.otf</string>
+		<string>Satoshi-Black.otf</string>
+		<string>Satoshi-Light.otf</string>
+		<string>Satoshi-Medium.otf</string>
+	</array>
+</dict>
+</plist>

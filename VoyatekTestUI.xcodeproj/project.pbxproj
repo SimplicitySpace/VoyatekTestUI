@@ -29,9 +29,58 @@
 		043B286B2D68C88D0003467E /* VoyatekTestUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoyatekTestUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		043B28E22D68D1C80003467E /* Exceptions for "VoyatekTestUI" folder in "VoyatekTestUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ApiService/APIService.swift,
+				"Fonts/Satoshi-Black.otf",
+				"Fonts/Satoshi-BlackItalic.otf",
+				"Fonts/Satoshi-Bold.otf",
+				"Fonts/Satoshi-BoldItalic.otf",
+				"Fonts/Satoshi-Italic.otf",
+				"Fonts/Satoshi-Light.otf",
+				"Fonts/Satoshi-LightItalic.otf",
+				"Fonts/Satoshi-Medium.otf",
+				"Fonts/Satoshi-MediumItalic.otf",
+				"Fonts/Satoshi-Regular.otf",
+			);
+			target = 043B28602D68C88D0003467E /* VoyatekTestUITests */;
+		};
+		043B28E32D68D1C80003467E /* Exceptions for "VoyatekTestUI" folder in "VoyatekTestUIUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ApiService/APIService.swift,
+				"Fonts/Satoshi-Black.otf",
+				"Fonts/Satoshi-BlackItalic.otf",
+				"Fonts/Satoshi-Bold.otf",
+				"Fonts/Satoshi-BoldItalic.otf",
+				"Fonts/Satoshi-Italic.otf",
+				"Fonts/Satoshi-Light.otf",
+				"Fonts/Satoshi-LightItalic.otf",
+				"Fonts/Satoshi-Medium.otf",
+				"Fonts/Satoshi-MediumItalic.otf",
+				"Fonts/Satoshi-Regular.otf",
+			);
+			target = 043B286A2D68C88D0003467E /* VoyatekTestUIUITests */;
+		};
+		043B28E52D68D4350003467E /* Exceptions for "VoyatekTestUI" folder in "VoyatekTestUI" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 043B28502D68C8880003467E /* VoyatekTestUI */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		043B28532D68C8880003467E /* VoyatekTestUI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				043B28E52D68D4350003467E /* Exceptions for "VoyatekTestUI" folder in "VoyatekTestUI" target */,
+				043B28E22D68D1C80003467E /* Exceptions for "VoyatekTestUI" folder in "VoyatekTestUITests" target */,
+				043B28E32D68D1C80003467E /* Exceptions for "VoyatekTestUI" folder in "VoyatekTestUIUITests" target */,
+			);
 			path = VoyatekTestUI;
 			sourceTree = "<group>";
 		};
@@ -75,6 +124,7 @@
 		043B28482D68C8880003467E = {
 			isa = PBXGroup;
 			children = (
+				043B28E62D68D4C10003467E /* Extensions */,
 				043B28532D68C8880003467E /* VoyatekTestUI */,
 				043B28642D68C88D0003467E /* VoyatekTestUITests */,
 				043B286E2D68C88D0003467E /* VoyatekTestUIUITests */,
@@ -90,6 +140,13 @@
 				043B286B2D68C88D0003467E /* VoyatekTestUIUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		043B28E62D68D4C10003467E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,11 +456,13 @@
 				DEVELOPMENT_TEAM = 99JB7YF76M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoyatekTestUI/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,11 +487,13 @@
 				DEVELOPMENT_TEAM = 99JB7YF76M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoyatekTestUI/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
