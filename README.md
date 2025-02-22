@@ -19,8 +19,8 @@ VoyatekTestUI is a SwiftUI-based mobile application that allows users to browse 
 
 ### Clone the Repository
 ```sh
-git clone https://github.com/yourusername/FoodApp.git
-cd FoodApp
+https://github.com/SimplicitySpace/VoyatekTestUI.git
+cd VoyatekTestUI
 ```
 
 ### Install Dependencies
@@ -30,7 +30,7 @@ The project uses Swift Package Manager (SPM). Open the project in Xcode, and dep
 Update `APIService.swift` with your backend API URL and authentication tokens if required.
 
 ### Run the Project
-1. Open `FoodApp.xcodeproj` in Xcode.
+1. Open `VoyatekTestUI.xcodeproj` in Xcode.
 2. Select the appropriate simulator or connect a physical device.
 3. Click **Run (⌘R)** to build and launch the app.
 
